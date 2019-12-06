@@ -65,7 +65,7 @@
     "bluebird": "^3.5.0",
     "httpntlm": "^1.7.5",
     "lodash": "^4.12.0",
-    "node-sp-auth": "^2.1.1",
+    "sp-auth": "git+ssh://git@git.haxakon.se:2222/fmv/sp-auth#1be13447958ae6265219d286044d38e47b1089b9",
     "request": "^2.81.0",
     "request-promise": "^4.2.1"
   }

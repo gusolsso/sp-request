@@ -5,7 +5,7 @@ import * as request from 'request-promise';
 import * as Promise from 'bluebird';
 import * as _ from 'lodash';
 import * as util from 'util';
-import * as spauth from 'node-sp-auth';
+import * as spauth from 'sp-auth';
 import * as crypto from 'crypto';
 import * as https from 'https';
 
@@ -18,7 +18,7 @@ const isUrlHttps: any = (url: string): boolean => {
   return url.split('://')[0].toLowerCase() === 'https';
 };
 
-export function create(credentials?: spauth.IAuthOptions): ISPRequest {
+export function create(credentials?: spauth.IOnpremiseTmgCredentials): ISPRequest {
 
   let agent: https.Agent = new https.Agent({
     rejectUnauthorized: false,

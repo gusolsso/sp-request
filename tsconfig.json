@@ -8,6 +8,7 @@
     "noImplicitAny": false,
     "pretty": true,
     "removeComments": true,
+    "outDir": "./lib",
     "lib": [
       "es2015"
     ],

@@ -8,6 +8,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
+    "prepare": "npm run build",
     "test": "gulp test-ci",
     "build": "npm install && gulp tsc",
     "dev": "gulp live-dev"
